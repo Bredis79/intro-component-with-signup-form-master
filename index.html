@@ -8,6 +8,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/query.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
 
 
@@ -15,26 +19,31 @@
 
 <body>
   <main>
-    <section class="text">
-      <h1>Learn to code by watching others</h1>
+    <section class="left_side">
+      <section class="text">
+        <h1>Learn to code by watching others</h1>
 
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-        but understanding how developers think is invaluable.</p>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </section>
+
     </section>
-    <section class="blue_box">
-      <p>Try it free 7 days then $20/mo. thereafter</p>
+    <section class="right_side">
+      <section class="blue_box">
+        <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      </section>
+      <form>
+        <input type="text" id="firstName" placeholder="First Name"> 
+       <div id="errorBox"></div>
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="email" id="email" name="" id="" placeholder="Email Address">
+        <input type="password" id="password" placeholder="Password">
+
+        <input type="submit" id="submit" value="Claim your free trial">
+
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a> </p>
+      </form>
     </section>
-    <form>
-      <input type="text" placeholder="First Name">
-      <input type="text" placeholder="Last Name">
-      <input type="email" name="" id="" placeholder="Email Address">
-      <input type="password" placeholder="Password">
-
-      <input type="submit" value="Claim your free trial">
-
-      <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a> </p>
-    </form>
-
   </main>
   <footer>
     <p class="attribution">
