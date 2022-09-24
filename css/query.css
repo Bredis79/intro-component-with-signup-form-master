@@ -10,7 +10,7 @@
 
     main {
         width: 1440px;
-        height: 800px;
+        min-height: 800px;
         background: url(../images/bg-intro-desktop.png) hsl(0, 100%, 74%);
         display: flex;
         background-position: center;
@@ -79,16 +79,9 @@
         margin-top: 40px;
     }
 
-    .error {
-        background-image: url(../images/icon-error.svg);
-        background-repeat: no-repeat;
-        background-position: 93%;
-    }
-
-    .errorBox {
-        margin-top: 20px;
-        color: red;
-
+    #errorBox1, #errorBox2, #errorBox3, #errorBox4 {
+        width: 460px;
+        padding: 5px 3px 0 0;
     }
 
     input:last-of-type {

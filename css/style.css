@@ -29,7 +29,7 @@ body {
 
 main {
     width: 375px;
-    height: 1000px;
+    min-height: 1000px;
     background: url(../images/bg-intro-mobile.png) hsl(0, 100%, 74%);
     padding: 92px 25px 70px 25px;
     flex-direction: column;
@@ -96,6 +96,25 @@ input {
 
 input:first-of-type {
     margin-top: 25px;
+}
+
+.error {
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 93%;
+}
+
+#errorBox1, #errorBox2, #errorBox3, #errorBox4 {
+    width: 280px;
+    height: 44px;
+    margin: -20px 0 0 40px;
+    padding: 5px 20px 0 0;
+    color: red;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: right;
+    display: none;
 }
 
 input:last-of-type {
